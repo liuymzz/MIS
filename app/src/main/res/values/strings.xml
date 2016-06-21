@@ -5,4 +5,5 @@
     <string name="login_account">这里输入账号</string>
     <string name="login_password">这里输入密码</string>
     <string name="login_go">点击我登陆吧！</string>
+    <string name="search_hint">搜索</string>
 </resources>

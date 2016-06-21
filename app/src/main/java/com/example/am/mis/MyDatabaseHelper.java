@@ -6,12 +6,16 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class MyDatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String CREATE_TABLE = "create table person (" +
+    public static final String CREATE_TABLE1 = "create table person (" +
             "_id integer primary key autoincrement," +
             "name text," +
             "num text," +
             "sex text," +
             "salary text)";
+    public static final String CREATE_TABLE2 = "create table history (" +
+            "_id integer primary key autoincrement," +
+            "temp text)";
+
     private Context mContext;
 
     public MyDatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -21,7 +25,8 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CREATE_TABLE);
+        db.execSQL(CREATE_TABLE1);
+        db.execSQL(CREATE_TABLE2);
     }
 
     @Override
