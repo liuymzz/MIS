@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MIS</string>
+    <string name="login_title">欢迎进入刘亚明的管理信息系统</string>
+    <string name="login_hint"><![CDATA[输入由本人独家提供的账号密码登陆噢(>_<)]]></string>
+    <string name="login_account">这里输入账号</string>
+    <string name="login_password">这里输入密码</string>
+    <string name="login_go">点击我登陆吧！</string>
+</resources>
