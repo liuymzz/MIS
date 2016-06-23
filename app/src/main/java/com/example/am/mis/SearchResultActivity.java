@@ -27,7 +27,7 @@ public class SearchResultActivity extends Activity {
     private TextView tv_tip;
     private ListView listView;
     private TextView tv_clear;
-    private MyDatabaseHelper helper = new MyDatabaseHelper(this,"information.db",null,1);;
+    private MyDatabaseHelper helper = new MyDatabaseHelper(this,"information.db",null,1);
     private SQLiteDatabase db;
     private BaseAdapter adapter;
 
@@ -62,7 +62,7 @@ public class SearchResultActivity extends Activity {
                         insertData(et_search.getText().toString().trim());
                         queryData("");
                     }
-                    // TODO 根据输入的内容模糊查询商品，并跳转到另一个界面，由你自己去实现
+
                     Toast.makeText(SearchResultActivity.this, "clicked!", Toast.LENGTH_SHORT).show();
 
                 }
@@ -103,7 +103,7 @@ public class SearchResultActivity extends Activity {
                 String name = textView.getText().toString();
                 et_search.setText(name);
                 Toast.makeText(SearchResultActivity.this, name, Toast.LENGTH_SHORT).show();
-                // TODO 获取到item上面的文字，根据该关键字跳转到另一个页面查询，由你自己去实现
+
             }
         });
 
